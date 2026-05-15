@@ -1,0 +1,40 @@
+# Зависимости
+node_modules/
+
+# Переменные окружения (секреты)
+.env
+.env.local
+.env.*.local
+
+# Папки сборки
+dist/
+build/
+.dist/
+
+# Папки миграций (но не сама структура)
+drizzle/meta/
+drizzle/*.sql
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Логи
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Временные файлы TypeScript
+*.tsbuildinfo
+
+# Файлы отчётов
+coverage/
+.nyc_output/

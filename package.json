@@ -1,0 +1,32 @@
+{
+  "name": "telegrambot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Telegram bot on TypeScript with grammY",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsx src/app.ts",
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:generate": "drizzle-kit generate --dialect=postgresql --schema=src/db/schemas/registry.ts --out=./drizzle",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:studio": "drizzle-kit studio --dialect=postgresql --schema=src/db/schemas/registry.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.45.2",
+    "grammy": "^1.30.0",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/pg": "^8.20.0",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.22.0",
+    "typescript": "^5.4.5"
+  }
+}
